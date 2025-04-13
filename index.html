@@ -13,57 +13,64 @@
             justify-content: center;
             align-items: center;
             height: 100vh;
-            background-color: #f5f5f5;
+            background: linear-gradient(to right, #ff7e5f, #feb47b);
             transition: background 1s ease;
         }
         .container {
             text-align: center;
             padding: 40px;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+            background-color: rgba(255, 255, 255, 0.8);
             width: 100%;
-            max-width: 600px;
+            max-width: 700px;
         }
         h1 {
             font-size: 32px;
             margin-bottom: 30px;
+            color: #333;
         }
         .option {
-            background-color: #f0f0f0;
+            background: rgba(255, 255, 255, 0.9);
             padding: 20px;
             margin-bottom: 20px;
             border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             font-size: 18px;
             transition: background-color 0.3s, transform 0.3s;
             cursor: pointer;
         }
         .option:hover {
-            background-color: #eaeaea;
+            background-color: #f1f1f1;
             transform: scale(1.05);
         }
         .option h3 {
             font-size: 24px;
             margin-bottom: 10px;
+            color: #444;
         }
         .option p {
             line-height: 1.6;
+            color: #666;
         }
+        /* 背景圖片 */
         .background-option-1 {
             background-image: url('https://via.placeholder.com/1600x900/FFCC00/FFFFFF?text=Option+1');
             background-size: cover;
             background-position: center;
+            color: #fff;
         }
         .background-option-2 {
             background-image: url('https://via.placeholder.com/1600x900/00CCFF/FFFFFF?text=Option+2');
             background-size: cover;
             background-position: center;
+            color: #fff;
         }
         .background-option-3 {
             background-image: url('https://via.placeholder.com/1600x900/00FF00/FFFFFF?text=Option+3');
             background-size: cover;
             background-position: center;
+            color: #fff;
         }
         .result {
             font-size: 24px;
@@ -78,7 +85,7 @@
 <div class="container">
     <h1>三選一・請用直覺選擇你最有感的那位「我」</h1>
 
-    <div class="option" onclick="setBackground(1)">
+    <div class="option background-option-1" onclick="setBackground(1)">
         <h3>選項一</h3>
         <p>「我不擅長說話，卻總在你身邊。<br>
         我不奪目，但懂得如何成為你的風格一部分。<br>
@@ -87,7 +94,7 @@
         當你選擇我，你選的是某一種靜靜閃耀的方式。」</p>
     </div>
 
-    <div class="option" onclick="setBackground(2)">
+    <div class="option background-option-2" onclick="setBackground(2)">
         <h3>選項二</h3>
         <p>「我不喧嘩，卻總能為你開路。<br>
         我不奢華，但足以映照你的品味。<br>
@@ -96,7 +103,7 @@
         我存在的地方，事情開始變得簡單。」</p>
     </div>
 
-    <div class="option" onclick="setBackground(3)">
+    <div class="option background-option-3" onclick="setBackground(3)">
         <h3>選項三</h3>
         <p>「我不急著前進，卻隨著你的步伐安靜陪伴。<br>
         我不常被注意，但我見證你所經歷的一切。<br>
